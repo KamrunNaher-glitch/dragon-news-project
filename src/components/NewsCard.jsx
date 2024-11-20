@@ -3,6 +3,7 @@
 
 import { FaRegStar, FaStar } from 'react-icons/fa';
 import { CiBookmark, CiShare2 } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 
 const NewsCard = (props = {}) => {
   const {news} = props || {}  ;
@@ -31,7 +32,7 @@ const NewsCard = (props = {}) => {
       <div className="">
        
               <p>{news.details}</p>
-              <a className='text-orange-400'>Read More</a>
+            <Link to={`/news/${news._id}`} className='text-primary'>Read More</Link>
         <div className="card-actions justify-between items-center mt-4">
           <div className="flex items-center">
             <div className="rating rating-sm mr-2">
