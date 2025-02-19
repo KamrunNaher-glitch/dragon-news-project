@@ -1,6 +1,3 @@
-
-
-
 import { FaRegStar, FaStar } from 'react-icons/fa';
 import { CiBookmark, CiShare2 } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
@@ -12,7 +9,7 @@ const NewsCard = (props = {}) => {
               <div className='space-y-2'>
               <div className='bg-[#F3F3F3] px-2  flex justify-between items-center'>
               <div className="flex items-center my-2 ">
-          <img src={news.author.img} alt="Author" className="w-8 h-8 rounded-full mr-2"/>
+          <img src={news.author.img} alt="Author" className="w-6 h-6 rounded-full mr-2"/>
           <div>
           <span className="text-sm">{news.author.name}</span>
         <p className=" text-sm text-gray-500 text-start">{new Date(news.author.published_date).toDateString()}</p>
